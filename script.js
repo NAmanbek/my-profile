@@ -303,8 +303,12 @@ tumbler.addEventListener('click', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  powerOff.style.color = 'rgb(9, 187, 9)';
-  powerOff.style.textShadow = '0px 0px 2px rgb(23, 225, 77)';
+  const powerOff = document.querySelector('.fa-power-off');
+  if (powerOff) {
+    // Ensure the color and shadow are set to green
+    powerOff.style.color = 'rgb(9, 187, 9)';
+    powerOff.style.textShadow = '0px 0px 2px rgb(23, 225, 77)';
+  }
 });
 
 terminalReturn.addEventListener('click', () => {
