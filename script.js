@@ -302,6 +302,11 @@ tumbler.addEventListener('click', () => {
   }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  powerOff.style.color = 'rgb(9, 187, 9)';
+  powerOff.style.textShadow = '0px 0px 2px rgb(23, 225, 77)';
+});
+
 terminalReturn.addEventListener('click', () => {
   // Check if the screen is off
   if (screenProfile.style.display === 'flex') {
